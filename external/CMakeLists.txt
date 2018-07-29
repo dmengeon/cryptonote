@@ -1,3 +1,11 @@
+find ./ -type f -readable -writable -exec sed -i "s/Litecoin/Floripacoin/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/LiteCoin/Floripacoin/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/LTC/FLN/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/litecoin/Floripacoin/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/litecoind/Floripacoin/g" {} \;
+
+
+
 set(UPNPC_BUILD_STATIC ON CACHE BOOL "Build static library")
 set(UPNPC_BUILD_SHARED OFF CACHE BOOL "Build shared library")
 set(UPNPC_BUILD_TESTS OFF CACHE BOOL "Build test executables")
